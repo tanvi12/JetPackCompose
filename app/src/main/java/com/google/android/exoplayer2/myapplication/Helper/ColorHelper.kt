@@ -1,4 +1,4 @@
-package com.google.android.exoplayer2.myapplication.image
+package com.google.android.exoplayer2.myapplication.Helper
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

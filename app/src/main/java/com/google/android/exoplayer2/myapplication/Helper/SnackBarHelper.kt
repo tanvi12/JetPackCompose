@@ -1,4 +1,4 @@
-package com.google.android.exoplayer2.myapplication.image
+package com.google.android.exoplayer2.myapplication.Helper
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
@@ -31,7 +31,7 @@ fun snackBarExample(){
                 value = textFieldState.value,
                 label = { Text("Enter your name") },
                 onValueChange = {
-                    textFieldState.value = it.toString()
+                    textFieldState.value = it
                 }, singleLine = true, modifier = Modifier.fillMaxWidth()
             )
             Spacer(modifier = Modifier.height(16.dp))

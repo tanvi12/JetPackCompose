@@ -1,4 +1,4 @@
-package com.google.android.exoplayer2.myapplication.image
+package com.google.android.exoplayer2.myapplication.Helper
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
