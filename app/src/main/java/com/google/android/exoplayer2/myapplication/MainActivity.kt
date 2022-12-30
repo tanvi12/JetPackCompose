@@ -3,9 +3,20 @@ package com.google.android.exoplayer2.myapplication
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.google.android.exoplayer2.myapplication.MeditationUI.HomeScreen
-import com.google.android.exoplayer2.myapplication.ui.theme.MeditationUIYouTubeTheme
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.Surface
 
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+import com.google.android.exoplayer2.myapplication.MeditationUI.HomeScreen
+import com.google.android.exoplayer2.myapplication.Timer.Timer
+import com.google.android.exoplayer2.myapplication.ui.theme.MeditationUIYouTubeTheme
+import androidx.compose.material.Text
+import com.google.android.exoplayer2.myapplication.DropDown.DropDown
+import com.google.android.exoplayer2.myapplication.Instagram.ProfileScreen
 
 class MainActivity : ComponentActivity() {
 
@@ -13,11 +24,42 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MeditationUIYouTubeTheme {
-                HomeScreen()
-            }
+//            MeditationUIYouTubeTheme {
+//                HomeScreen()
+//            }
 
+//            Surface(color = Color(0xFF101010), modifier = Modifier.fillMaxSize()) {
+//                Box(contentAlignment = Alignment.Center){
+//                    Timer(
+//                        totalTime = 100L * 1000L,
+//                        handleColor = Color.Green,
+//                        inactiveColor = Color.DarkGray,
+//                        activeColor = Color(0xFF37B900),
+//                        modifier = Modifier.size(200.dp)
+//                    )
+//                }
+//            }
+
+//            Surface(
+//                color = Color(0xFF101010),
+//                modifier = Modifier.fillMaxSize()
+//            ) {
+//                DropDown(
+//                    text = "Hello World!",
+//                    modifier = Modifier.padding(15.dp)
+//                ) {
+//                    Text(
+//                        text = "This is now revealed!", modifier = Modifier
+//                            .fillMaxWidth()
+//                            .height(100.dp)
+//                            .background(Color.Green)
+//                    )
+//                }
+//            }
+
+            ProfileScreen()
         }
+
     }
 
 }
