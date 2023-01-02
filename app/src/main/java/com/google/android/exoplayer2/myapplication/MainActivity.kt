@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Surface
 
 import androidx.compose.ui.Alignment
@@ -16,23 +17,30 @@ import com.google.android.exoplayer2.myapplication.Timer.Timer
 import com.google.android.exoplayer2.myapplication.ui.theme.MeditationUIYouTubeTheme
 import androidx.compose.material.Text
 import com.google.android.exoplayer2.myapplication.BottomNavigation.BottomNavigationShow
+import com.google.android.exoplayer2.myapplication.BottomSheet.showBottomSheet
 import com.google.android.exoplayer2.myapplication.DropDown.DropDown
 import com.google.android.exoplayer2.myapplication.Instagram.ProfileScreen
 import com.google.android.exoplayer2.myapplication.MutliSelection.MultiSelection
 import com.google.android.exoplayer2.myapplication.Navigation.Navigation
+import com.google.android.exoplayer2.myapplication.Pagination.showPaginationExample
 import com.google.android.exoplayer2.myapplication.ParallaxScrollEffect.ParallaxScrollEffect
 import com.google.android.exoplayer2.myapplication.Permission.PermissionExample
 import com.google.android.exoplayer2.myapplication.Splash.SplashNavigation
+import com.google.android.exoplayer2.myapplication.SupportDifferentScreen.showListDifferentScreenSizeExample
+import com.google.android.exoplayer2.myapplication.navigationDrawer.navigationDrawerExample
 
 class MainActivity : ComponentActivity() {
 
+    @OptIn(ExperimentalMaterialApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MeditationUIYouTubeTheme{
 
-            }
+            navigationDrawerExample()
+            //showBottomSheet()
+//            showPaginationExample()
+//            showListDifferentScreenSizeExample()
 //            Navigation()
 //            MeditationUIYouTubeTheme {
 //                HomeScreen()
