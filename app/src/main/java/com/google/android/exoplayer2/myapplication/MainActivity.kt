@@ -15,8 +15,14 @@ import com.google.android.exoplayer2.myapplication.MeditationUI.HomeScreen
 import com.google.android.exoplayer2.myapplication.Timer.Timer
 import com.google.android.exoplayer2.myapplication.ui.theme.MeditationUIYouTubeTheme
 import androidx.compose.material.Text
+import com.google.android.exoplayer2.myapplication.BottomNavigation.BottomNavigationShow
 import com.google.android.exoplayer2.myapplication.DropDown.DropDown
 import com.google.android.exoplayer2.myapplication.Instagram.ProfileScreen
+import com.google.android.exoplayer2.myapplication.MutliSelection.MultiSelection
+import com.google.android.exoplayer2.myapplication.Navigation.Navigation
+import com.google.android.exoplayer2.myapplication.ParallaxScrollEffect.ParallaxScrollEffect
+import com.google.android.exoplayer2.myapplication.Permission.PermissionExample
+import com.google.android.exoplayer2.myapplication.Splash.SplashNavigation
 
 class MainActivity : ComponentActivity() {
 
@@ -24,6 +30,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            MeditationUIYouTubeTheme{
+
+            }
+//            Navigation()
 //            MeditationUIYouTubeTheme {
 //                HomeScreen()
 //            }
@@ -57,7 +67,14 @@ class MainActivity : ComponentActivity() {
 //                }
 //            }
 
-            ProfileScreen()
+//            ProfileScreen()
+
+//            BottomNavigationShow()
+            //  ParallaxScrollEffect()
+
+//            MultiSelection()
+
+       //     PermissionExample()
         }
 
     }
